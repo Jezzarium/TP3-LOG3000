@@ -51,4 +51,4 @@ def divide(a, b):
     Raises:
         ValueError: If b is zero.
     """
-    return a // b  # there is a bug here
+    return a / b
