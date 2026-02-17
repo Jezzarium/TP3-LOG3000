@@ -64,7 +64,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 3. **Calculer**
    - Entrez une expression (ex: `10 + 5`) dans le champ de saisie.
-   - Appuyez sur le bouton "Calculer" (ou Entrée).
+   - Appuyez sur le bouton "=".
    - Le résultat s'affichera à l'écran.
 
 ## Tests
