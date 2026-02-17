@@ -19,7 +19,7 @@ L'objectif principal est de fournir une base de code structurée pour démontrer
 
 Avant de commencer, assurez-vous d'avoir installé :
 
-- **Python 3.8+**
+- **Python 3.9+** (requis par Flask)
 - **pip** (gestionnaire de paquets Python)
 - **Git**
 
