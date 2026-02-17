@@ -3,6 +3,7 @@ from operators import add, subtract, multiply, divide
 
 app = Flask(__name__)
 
+# Map operator symbols to their corresponding functions
 OPS = {
     '+': add,
     '-': subtract,
@@ -11,6 +12,22 @@ OPS = {
 }
 
 def calculate(expr: str):
+    """
+    Parses and evaluates a simple mathematical expression.
+
+    Supported operators: +, -, *, /
+    The expression should contain two numbers separated by an operator.
+
+    Args:
+        expr (str): The mathematical expression string (e.g., "5 + 3").
+
+    Returns:
+        float: The result of the calculation.
+
+    Raises:
+        ValueError: If the expression is invalid, empty, contains multiple operators,
+                    or if operands are not valid numbers.
+    """
     if not expr or not isinstance(expr, str):
         raise ValueError("empty expression")
 
@@ -43,6 +60,15 @@ def calculate(expr: str):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    """
+    Handles requests to the root URL.
+
+    GET: Renders the calculator interface.
+    POST: Processes the calculation form submission.
+
+    Returns:
+        str: Rendered HTML template with the result (if any).
+    """
     result = ""
     if request.method == 'POST':
         expression = request.form.get('display', '')
