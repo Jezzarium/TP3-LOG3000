@@ -86,7 +86,7 @@ Nous suivons un flux de travail basé sur les branches pour la contribution :
 1. **Signaler un problème** : Ouvrez une Issue GitHub pour décrire le bogue ou la fonctionnalité manquante.
 2. **Créer une branche** : Créez une nouvelle branche à partir de `main` pour votre travail.
    ```bash
-   git checkout -b fix/nom-du-correctif
+   git checkout -b nom-du-correctif
    ```
 3. **Développer et Tester** : Apportez vos modifications et assurez-vous que les tests passent.
 4. **Soumettre une Pull Request (PR)** : Poussez votre branche et ouvrez une PR vers `main` pour revue.
