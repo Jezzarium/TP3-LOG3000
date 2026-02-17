@@ -1,6 +1,6 @@
 # Modèles (Templates)
 
-Ce répertoire contient les modèles HTML Jinja2 utilisés par l'application Flask pour afficher l'interface utilisateur.
+Ce répertoire contient les modèles HTML Jinja utilisés par l'application Flask pour afficher l'interface utilisateur.
 
 ## Structure
 
@@ -15,4 +15,4 @@ Exemple :
 return render_template('index.html', result=result)
 ```
 
-Les modèles utilisent la syntaxe Jinja2 (par ex. `{{ result }}`) pour insérer du contenu dynamique transmis par le backend.
+Les modèles utilisent la syntaxe Jinja (par ex. `{{ result }}`) pour insérer du contenu dynamique transmis par le backend.
